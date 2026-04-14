@@ -1,0 +1,62 @@
+body {
+    font-family: Arial;
+    background: linear-gradient(to right, pink, black);
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    color: black;
+    padding: 20px;
+    border-radius: 12px;
+    width: 350px;
+    margin: auto;
+}
+
+h1 {
+    color: #ff4d88;
+}
+
+button {
+    background-color: #ff4d88;
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e6005c;
+}
+
+.emoji {
+    font-size: 40px;
+}
+
+#result {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+/* Hearts Animation */
+.hearts {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.heart {
+    position: absolute;
+    color: pink;
+    animation: float 5s linear infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(-500px); opacity: 0; }
+}
